@@ -6,8 +6,21 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/bootstrap.css" />
 		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/top.js"></script>
 	</head>
 	<body>
+		
+		<div class="side" id="top_div">
+			<ul>
+				<li id="top" class="topp"></li>
+				<li class="code">
+					<div class="xx" style="display: none;">
+						<img src="../img/code11.png" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
+		
 				<div class="head"></div>
 				<div class="container">
 					<div class="sousuo">
@@ -19,10 +32,10 @@
 					<ul class="nav_n">
 						<li><a href=""  class="active_nav">关于瑞灵</a></li>
 						<li><a href="cpfw.html">产品与服务</a></li>
-						<li><a href="">新闻动态</a></li>
-						<li><a href="">投资者关系</a></li>
-						<li><a href="">营销网络</a></li>
-						<li><a href="">联系我们</a></li>
+						<li><a href="xwdt.html">新闻动态</a></li>
+						<li><a href="tzz.html">投资者关系</a></li>
+						<li><a href="yxwl.html">营销网络</a></li>
+						<li><a href="lxwm.html">联系我们</a></li>
 					</ul>
 				</div>
 		<hr />
@@ -180,17 +193,4 @@
 				</div>
 			</div>
 	</body>
-	<script>
-		$('.fx1').mousemove(function(){
-					$('.yjfx').show()
-				})
-				$('.fx1').mouseout(function(){
-					$('.yjfx').hide()
-				})
-				
-		$("#leftul li").click(function() {
-			$("#leftul li").eq($(this).index()).addClass("car").siblings().removeClass("car");
-			$("#box_right .right").hide().eq($(this).index()).show();
-		})
-	</script>
 </html>

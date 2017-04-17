@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/top.js"></script>
+	</head>
+
+	<body>
+		<div class="side" id="top_div">
+			<ul>
+				<li id="top" class="topp"></li>
+				<li class="code">
+					<div class="xx" style="display: none;">
+						<img src="../img/code11.png" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="head"></div>
+		<div class="container">
+			<div class="sousuo">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_logo"></div>
+			<ul class="nav_n">
+				<li>
+					<a href="gyrl.html">关于瑞灵</a>
+				</li>
+				<li>
+					<a href="cpfw.html">产品与服务</a>
+				</li>
+				<li>
+					<a href="xwdt.html" >新闻动态</a>
+				</li>
+				<li>
+					<a href="tzz.html" >投资者关系</a>
+				</li>
+				<li>
+					<a href="" class="active_nav">营销网络</a>
+				</li>
+				<li>
+					<a href="lxwm.html">联系我们</a>
+				</li>
+			</ul>
+		</div>
+		<hr />
+		<div class="gy_content">
+			<div class="gy_cont_top">
+				<p>营销网络</p>
+				<div class="position">
+					<span>您所在位置：</span>
+					<a href="../index.html">首页</a>
+					<a href="yxwl.html">营销网络</a>
+				</div>
+			</div>
+			<div class="banner" style="background:url(../img/markban.jpg) center 90px no-repeat;">
+				<i></i>
+				<em>about us</em>
+			</div>
+		</div>
+		
+		<div class="main" id="box_right">
+			<div class="info">
+				<img src="../img/markmap.jpg"/>
+				<br /><br />
+				<p>
+全球性的竞争催生了“营销网络”（marketing network）概念的形成。 营销网络是指公司在国内外寻找“战略伙伴”或“同盟者”，并与他们结合起来，以获得更广泛、更有效的地区市场的一种发展战略。营销网络的建立，为某一公司在世界各地的市场上同时推出同一新产品提供了可能，因而，也减少了由于种种原因的限制，使产品在进入其他国家和地区市场的时间上的延误而导致被仿制者夺走市场的风险 </p>
+			</div>
+		</div>
+
+		<!--footer-->
+		<div class=" footer footer_gyrl">
+			<div class="footer_cont">
+				<div class="footer_cont_left">版权所有：天津瑞灵石油设备股份有限公司 津ICP备14000534号-1</div>
+				<div class="footer_cont_right">
+					<ul>
+						<p style="color: #fff !important;">分享到：</p>
+						<li class="fx1">
+							<div class="yjfx">
+								<div class="yjfx_top">分享到</div>
+								<ul class="ul_fx">
+									<div class="fx_bj">
+										<li class="yfx">一键分享</li>
+									</div>
+									<div class="fx_bj">
+										<li class="xlwb">新浪微博</li>
+									</div>
+									<div class="fx_bj">
+										<li class="wx">微信</li>
+									</div>
+									<div class="fx_bj">
+										<li class="txwb">腾讯微博</li>
+									</div>
+									<div class="fx_bj">
+										<li class="kxw">开心网</li>
+									</div>
+									<div class="fx_bj">
+										<li class="bdtb">百度贴吧</li>
+									</div>
+									<div class="fx_bj">
+										<li class="xsy">百度新首页</li>
+									</div>
+									<div class="fx_bj">
+										<li class="hxwb">和讯微博</li>
+									</div>
+								</ul>
+								<ul class="ul_fx">
+									<div class="fx_bj">
+										<li class="kj">QQ空间</li>
+									</div>
+									<div class="fx_bj">
+										<li class="bdsc">百度云收藏</li>
+									</div>
+									<div class="fx_bj">
+										<li class="rrw">人人网</li>
+									</div>
+									<div class="fx_bj">
+										<li class="bdxc">百度相册</li>
+									</div>
+									<div class="fx_bj">
+										<li class="txpy">腾讯朋友</li>
+									</div>
+									<div class="fx_bj">
+										<li class="dbw">豆瓣网</li>
+									</div>
+									<div class="fx_bj">
+										<li class="hy">QQ好友</li>
+									</div>
+									<div class="fx_bj">
+										<li class="bdzx">百度中心</li>
+									</div>
+								</ul>
+								<div class="yjfx_bottom">
+									<div class="yjfx_bottom_cont">更多...</div>
+								</div>
+							</div>
+						</li>
+						<li class="fx2"></li>
+						<li class="fx3"></li>
+						<li class="fx4"></li>
+						<li class="fx5"></li>
+						<li class="fx6"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script>
+		$('.fx1').mousemove(function() {
+			$('.yjfx').show()
+		})
+		$('.fx1').mouseout(function() {
+			$('.yjfx').hide()
+		})
+
+		$("#leftul li").click(function() {
+			$("#leftul li").eq($(this).index()).addClass("car").siblings().removeClass("car");
+			$("#box_right .right").hide().eq($(this).index()).show();
+		})
+	</script>
+
+</html>

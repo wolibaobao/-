@@ -6,8 +6,20 @@
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/bootstrap.css" />
 		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/top.js"></script>
 	</head>
 	<body>
+		
+		<div class="side" id="top_div">
+			<ul>
+				<li id="top" class="topp"></li>
+				<li class="code">
+					<div class="xx" style="display: none;">
+						<img src="../img/code11.png" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
 				<div class="head"></div>
 				<div class="container">
 					<div class="sousuo">
@@ -19,10 +31,10 @@
 					<ul class="nav_n">
 						<li><a href="gyrl.html"  >关于瑞灵</a></li>
 						<li><a href="" class="active_nav">产品与服务</a></li>
-						<li><a href="">新闻动态</a></li>
-						<li><a href="">投资者关系</a></li>
-						<li><a href="">营销网络</a></li>
-						<li><a href="">联系我们</a></li>
+						<li><a href="xwdt.html">新闻动态</a></li>
+						<li><a href="tzz.html">投资者关系</a></li>
+						<li><a href="yxwl.html">营销网络</a></li>
+						<li><a href="lxwm.html">联系我们</a></li>
 					</ul>
 				</div>
 		<hr />
@@ -45,7 +57,7 @@
 			<ul class="gy_xl">
 				<li class="car">顶驱</li>
 				<li>电控</li>
-				<li>技术服务</li>
+				<li class="zzjg">技术服务</li>
 			</ul>
 		</div>
 		<div class="main" id="box_right">
@@ -193,5 +205,6 @@
 			$(".gy_xl li").eq($(this).index()).addClass("car").siblings().removeClass("car");
 			$(".main .info_cp").hide().eq($(this).index()).show();
 		})
+		
 	</script>
 </html>
